@@ -1,4 +1,4 @@
-package com.example.sst;
+package com.example.sst.Controller;
 import android.content.ContentValues;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -8,7 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.sst.DBHelper.DBHelper;
+import com.example.sst.Model.DBHelper;
+import com.example.sst.R;
 
 public class MainActivity extends AppCompatActivity {
     private DBHelper dbHelper;

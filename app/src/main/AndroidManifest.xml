@@ -13,7 +13,13 @@
         android:theme="@style/Theme.Sst"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".Controller.BlogVista"
+            android:exported="false" />
+        <activity
+            android:name=".Blog"
+            android:exported="false" />
+        <activity
+            android:name=".Controller.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

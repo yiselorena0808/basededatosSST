@@ -1,4 +1,4 @@
-package com.example.sst.DBHelper;
+package com.example.sst.Model;
 
 public class Constantes {
     public static  String DB_NAME = "gestion_equipos.db";
