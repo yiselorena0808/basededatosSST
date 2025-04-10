@@ -1,156 +1,229 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Controller.MainActivity">
+    android:orientation="vertical"
+    android:background="@color/Piel">
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="16dp"
-        android:background="@drawable/img_1">
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/Verde"
+        android:padding="10dp">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Gestion de equipos de proteccion personal"
-            android:textColor="@color/black"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/img"
+            android:layout_marginLeft="10dp" />
 
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="570dp">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+        <ImageView
+            android:id="@+id/img_salir"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/img_1"
+            android:layout_marginRight="10dp" />
 
-                <EditText
-                    android:id="@+id/et_id_gestion"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:hint="Id Gestión"
-                    android:inputType="text"
-                    android:padding="10dp"
-                    android:textSize="16sp" />
-
-                <EditText
-                    android:id="@+id/et_id_usuario"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:hint="Id Usuario"
-                    android:inputType="text"
-                    android:padding="10dp"
-                    android:textSize="16sp" />
-
-                <EditText
-                    android:id="@+id/et_id_usuario2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:hint="Id Usuario 2"
-                    android:inputType="text"
-                    android:padding="10dp"
-                    android:textSize="16sp" />
-
-                <EditText
-                    android:id="@+id/et_nombre"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:hint="Nombre"
-                    android:inputType="text"
-                    android:padding="10dp"
-                    android:textSize="16sp" />
-
-                <EditText
-                    android:id="@+id/et_apellido"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:hint="Apellido"
-                    android:inputType="text"
-                    android:padding="10dp"
-                    android:textSize="16sp" />
-
-                <EditText
-                    android:id="@+id/et_cedula"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:hint="Cédula"
-                    android:inputType="number"
-                    android:padding="10dp"
-                    android:textSize="16sp" />
-
-                <EditText
-                    android:id="@+id/et_cargo"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:hint="Cargo"
-                    android:inputType="text"
-                    android:padding="10dp"
-                    android:textSize="16sp" />
-
-                <EditText
-                    android:id="@+id/et_producto"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:hint="Producto"
-                    android:inputType="text"
-                    android:padding="10dp"
-                    android:textSize="16sp" />
-
-                <EditText
-                    android:id="@+id/et_cantidad"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:hint="Cantidad"
-                    android:inputType="number"
-                    android:padding="10dp"
-                    android:textSize="16sp" />
-
-                <EditText
-                    android:id="@+id/et_estado"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:hint="Estado"
-                    android:inputType="text"
-                    android:padding="10dp"
-                    android:textSize="16sp" />
-
-                <EditText
-                    android:id="@+id/et_importancia"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:hint="Importancia"
-                    android:inputType="text"
-                    android:padding="10dp"
-                    android:textSize="16sp" />
-            </LinearLayout>
-        </ScrollView>
-        <Button
-            android:layout_width="200dp"
-            android:id="@+id/btn_guardar"
-            android:layout_height="50dp"
-            android:layout_marginTop="20dp"
-            android:layout_gravity="center"
-            android:text="guardar"
-            android:backgroundTint="@color/azul">
-        </Button>
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reportes"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="#333333" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/scroll_brackground"
+        android:padding="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF"
+                android:hint="Ingrese su nombre"
+                android:padding="10dp"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Cédula"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_cedula"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF"
+                android:hint="Ingrese su cédula"
+                android:padding="10dp"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Lugar"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_lugar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF"
+                android:hint="Ingrese su lugar"
+                android:padding="10dp"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Cargo"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF"
+                android:hint="Ingrese su descripcion"
+                android:padding="10dp"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Descripcion"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_cargo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF"
+                android:hint="Ingrese su cargo"
+                android:padding="10dp"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Fecha"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_fecha"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF"
+                android:hint="Ingrese la fecha de suceso"
+                android:padding="10dp"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Evidencias"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+            <EditText
+                android:id="@+id/et_Evidencias"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF"
+                android:hint="Ingrese evidencias"
+                android:padding="10dp"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/Verde">
+
+            </ImageButton>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Ingrese Importancia"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/sp_importancia"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:entries="@array/importancias"
+        android:padding="10dp"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_enviar"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/Verde"
+        android:text="Enviar Reportes" />
+
+</LinearLayout>

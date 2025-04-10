@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="estados">
+        <item>Aceptado:</item>
+        <item>En proceso:</item>
+        <item>Rechazado:</item>
+    </string-array>
+
+    <string-array name="importancias">
+        <item>Alta:</item>
+        <item>Media:</item>
+        <item>Baja:</item>
+    </string-array>
+</resources>
