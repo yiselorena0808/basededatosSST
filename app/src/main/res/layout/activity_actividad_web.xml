@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:text="@string/app_name"
+        android:textColor="#212121"
+        android:textSize="24sp"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/etUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="@string/nombre_usuario"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColorHint="#757575"
+                android:autofillHints="username" />
+
+            <EditText
+                android:id="@+id/etNombreActividad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="@string/nombre_actividad"
+                android:inputType="textCapWords"
+                android:minHeight="48dp"
+                android:textColorHint="#757575"
+                android:autofillHints="name" />
+
+            <EditText
+                android:id="@+id/etFecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="@string/fecha_actividad"
+                android:inputType="date"
+                android:minHeight="48dp"
+                android:textColorHint="#757575"
+                android:autofillHints="date" />
+
+            <EditText
+                android:id="@+id/etDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="@string/descripcion_actividad"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:minHeight="48dp"
+                android:textColorHint="#757575" />
+
+            <Button
+                android:id="@+id/btnSubirImagenVideo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:minHeight="48dp"
+                android:backgroundTint="@color/azul"
+                android:text="@string/subir_imagen_video" />
+
+            <Button
+                android:id="@+id/btnSubirArchivo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:minHeight="48dp"
+                android:backgroundTint="@color/azul"
+                android:text="@string/subir_archivos" />
+
+            <Button
+                android:id="@+id/btnEnviarEvidencias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:minHeight="48dp"
+                android:backgroundTint="@color/azul"
+                android:text="@string/enviar_evidencias" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

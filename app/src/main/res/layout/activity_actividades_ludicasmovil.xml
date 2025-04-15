@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:text="@string/actividades_l_dicas"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/etUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:autofillHints="username"
+                android:hint="@string/usuario"
+                android:inputType="textPersonName"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/etNombreActividad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="@string/nombre_de_la_actividad"
+                android:inputType="textCapWords"
+                android:autofillHints="name"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/etFecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="@string/fecha_de_la_actividad"
+                android:inputType="date"
+                android:autofillHints="date"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/etDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="@string/descripcion_de_la_actividad"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:minHeight="48dp" />
+
+            <Button
+                android:id="@+id/btnSubirImagen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:minHeight="48dp"
+                android:backgroundTint="@color/azul"
+                android:text="@string/subir_imagen" />
+
+            <Button
+                android:id="@+id/btnSubirVideo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/azul"
+                android:minHeight="48dp"
+                android:text="@string/subir_video" />
+
+            <Button
+                android:id="@+id/btnEnviarEvidencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="@color/azul"
+                android:minHeight="48dp"
+                android:text="@string/enviar_evidencia" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
