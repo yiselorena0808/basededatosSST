@@ -13,6 +13,18 @@
         android:theme="@style/Theme.Sst"
         tools:targetApi="31">
         <activity
+            android:name=".ReportesRecibidos"
+            android:exported="false" />
+        <activity
+            android:name=".Reportes_Usuarioss"
+            android:exported="false" />
+        <activity
+            android:name=".Reportess"
+            android:exported="false" />
+        <activity
+            android:name=".Lector_Reporrrtes"
+            android:exported="false" />
+        <activity
             android:name=".Controller.ReportesUsuario"
             android:exported="false" />
         <activity

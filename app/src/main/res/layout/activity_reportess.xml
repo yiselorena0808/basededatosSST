@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="16dp">
+
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📄 REPORTES"
+            android:textAlignment="center"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:paddingBottom="20dp" />
+
+
+        <EditText
+            android:id="@+id/etBuscarFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="🔍 Buscar por fecha"
+            android:padding="14dp"
+            android:textColor="#000000"
+            android:textColorHint="#888888"
+
+            android:layout_marginBottom="20dp" />
+
+        <!-- Botones de reportes -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📝 Reporte 1 - Usuario A"
+            android:textColor="#000000"
+
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📊 Reporte 2 - Usuario B"
+            android:textColor="#000000"
+
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📋 Reporte 3 - Usuario C"
+            android:textColor="#000000"
+
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📄 Reporte 4 - Usuario D"
+            android:textColor="#000000"
+
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📑 Reporte 5 - Usuario E"
+            android:textColor="#000000"
+
+            android:layout_marginBottom="12dp" />
+
+
+        <Button
+            android:id="@+id/btnNuevo"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:text="➕ Nuevo"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#70e000"
+            android:elevation="4dp" />
+
+    </LinearLayout>
+</ScrollView>
