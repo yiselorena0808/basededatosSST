@@ -103,18 +103,12 @@
                         android:textSize="14sp"
                         android:textColor="#000000" />
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:gravity="center"
-                        android:text="Detalle"
-                        android:textSize="12sp"
-                        android:textColor="#009688"
-                        android:padding="6dp"
-                        android:background="#E0F2F1"
-                        android:layout_marginEnd="8dp"
-                        android:elevation="2dp" />
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:text="Detalles"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/Verde"/>
 
                     <ImageButton
                         android:layout_width="36dp"
@@ -144,18 +138,12 @@
                         android:textSize="14sp"
                         android:textColor="#000000" />
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:gravity="center"
-                        android:text="Detalle"
-                        android:textSize="12sp"
-                        android:textColor="#009688"
-                        android:padding="6dp"
-                        android:background="#E0F2F1"
-                        android:layout_marginEnd="8dp"
-                        android:elevation="2dp" />
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:text="Detalles"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/Verde"/>
 
                     <ImageButton
                         android:layout_width="36dp"
@@ -185,18 +173,12 @@
                         android:textSize="14sp"
                         android:textColor="#000000" />
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:gravity="center"
-                        android:text="Detalle"
-                        android:textSize="12sp"
-                        android:textColor="#009688"
-                        android:padding="6dp"
-                        android:background="#E0F2F1"
-                        android:layout_marginEnd="8dp"
-                        android:elevation="2dp" />
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:text="Detalles"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/Verde"/>
 
                     <ImageButton
                         android:layout_width="36dp"
@@ -226,18 +208,12 @@
                         android:textSize="14sp"
                         android:textColor="#000000" />
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:gravity="center"
-                        android:text="Detalle"
-                        android:textSize="12sp"
-                        android:textColor="#009688"
-                        android:padding="6dp"
-                        android:background="#E0F2F1"
-                        android:layout_marginEnd="8dp"
-                        android:elevation="2dp" />
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:text="Detalles"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/Verde"/>
 
                     <ImageButton
                         android:layout_width="36dp"
@@ -267,18 +243,12 @@
                         android:textSize="14sp"
                         android:textColor="#000000" />
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:gravity="center"
-                        android:text="Detalle"
-                        android:textSize="12sp"
-                        android:textColor="#009688"
-                        android:padding="6dp"
-                        android:background="#E0F2F1"
-                        android:layout_marginEnd="8dp"
-                        android:elevation="2dp" />
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:text="Detalles"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/Verde"/>
 
                     <ImageButton
                         android:layout_width="36dp"
@@ -308,18 +278,12 @@
                         android:textSize="14sp"
                         android:textColor="#000000" />
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:gravity="center"
-                        android:text="Detalle"
-                        android:textSize="12sp"
-                        android:textColor="#009688"
-                        android:padding="6dp"
-                        android:background="#E0F2F1"
-                        android:layout_marginEnd="8dp"
-                        android:elevation="2dp" />
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:text="Detalles"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/Verde"/>
 
                     <ImageButton
                         android:layout_width="36dp"
@@ -349,18 +313,12 @@
                         android:textSize="14sp"
                         android:textColor="#000000" />
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:gravity="center"
-                        android:text="Detalle"
-                        android:textSize="12sp"
-                        android:textColor="#009688"
-                        android:padding="6dp"
-                        android:background="#E0F2F1"
-                        android:layout_marginEnd="8dp"
-                        android:elevation="2dp" />
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:text="Detalles"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/Verde"/>
 
                     <ImageButton
                         android:layout_width="36dp"
