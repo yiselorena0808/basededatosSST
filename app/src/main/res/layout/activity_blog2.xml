@@ -36,32 +36,18 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_gravity="center">
+
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Crea una nueva publicacion"
-            android:textSize="30dp"
+            android:textSize="25dp"
             android:textStyle="bold"
             android:layout_margin="10dp"
             android:layout_gravity="center"
             />
 
-
-        <Button
-        android:layout_width="120dp"
-        android:layout_height="50dp"
-        android:layout_margin="10dp"
-        android:hint="Regresar"
-        android:backgroundTint="@color/back"/>
-
-
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -141,5 +127,12 @@
             />
     </LinearLayout>
 
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:hint="Regresar"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@color/back"/>
 
 </LinearLayout>
