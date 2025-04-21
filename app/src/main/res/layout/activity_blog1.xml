@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".Blog1"
     android:orientation="vertical"
-    android:background="#fdf3f1"
+    android:background="#FDF5F4"
     >
 
     <LinearLayout
