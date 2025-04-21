@@ -6,7 +6,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Blog1"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#fdf3f1"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/black">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_format_list_bulleted_24"
+            android:layout_marginLeft="10dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/img" />
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/txtTitulo"
@@ -39,8 +68,9 @@
             android:id="@+id/btnCrear"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/fondo"
+            android:backgroundTint="@color/Verde"
             android:hint="+"
+            android:textColorHint="@color/white"
             android:textSize="30dp"
             android:layout_marginLeft="10dp"
             />
