@@ -95,7 +95,6 @@
             android:orientation="horizontal"
             >
             <Button
-                android:id="@+id/btnAdjuntar"
                 android:layout_width="130dp"
                 android:layout_height="50dp"
                 android:hint="ADJUNTAR"
@@ -116,7 +115,7 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/btnPublicar"
+            android:id="@+id/txtcomen"
             android:layout_width="220dp"
             android:layout_height="50dp"
             android:backgroundTint="@color/Verde"
@@ -129,7 +128,6 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnRegresarBlog"
         android:layout_width="120dp"
         android:layout_height="50dp"
         android:layout_margin="10dp"
