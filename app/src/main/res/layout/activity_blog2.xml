@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Blog2"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_margin="30dp"
+        android:hint="Regresar"
+        android:backgroundTint="@color/back"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_background"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+        <EditText
+            android:id="@+id/txttitu"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/fondo2"
+            android:background="@drawable/cuadrado"
+            android:hint="INSERTA TITULO"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            />
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/cuadrado"
+            android:backgroundTint="@color/fondo2"
+            android:hint="INSERTA IMAGEN"
+            android:textSize="40dp"
+            />
+
+        <EditText
+            android:id="@+id/txtdesc"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@drawable/cuadrado"
+            android:backgroundTint="@color/fondo2"
+            android:hint="AÑADE UNA DESCRIPCION"
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:hint="ADJUNTAR"
+                android:layout_margin="30dp"
+                android:backgroundTint="@color/fondo"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="20dp"
+                android:hint="ADJUNTA UN ARCHIVO"
+                android:textSize="20dp"
+                />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/txtcomen"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/fondo"
+            android:hint="Publicar"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

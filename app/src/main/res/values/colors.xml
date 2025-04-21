@@ -3,7 +3,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="azul">#0347F4</color>
-    <color name="Verde">#3AB13A</color>
-    <color name="red">#FB0000</color>
+    <color name="Verde">#1D331D</color>
+    <color name="Piel">#F6F0EC</color>
+    <color name="fondo">#9CFFDC</color>
+    <color name="back">#FF4848</color>
+    <color name="fondo2">#AB9C9FA4</color>
 
 </resources>
