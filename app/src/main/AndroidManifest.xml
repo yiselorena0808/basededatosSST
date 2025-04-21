@@ -23,18 +23,9 @@
             android:exported="false" />
         <activity
             android:name=".Controller.MainActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Controller.ListaGestion"
-            android:exported="false" />
-        <activity
-            android:name=".Controller.ReportesUsuario"
-            android:exported="false" />
-        <activity
-            android:name=".Controller.BlogVista"
-            android:exported="false" />
-        <activity
-            android:name=".Blog"
             android:exported="false" />
         <activity
             android:name=".Controller.GestionEpp"

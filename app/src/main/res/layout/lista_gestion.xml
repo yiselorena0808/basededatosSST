@@ -1,319 +1,351 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".Controller.ListaGestion">
+    android:background="#fdf3f1">
+
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="horizontal"
-        android:background="@color/black">
-
-        <ImageView
-            android:id="@+id/iv_logo"
-            android:layout_width="40dp"
-            android:layout_height="50dp"
-            android:src="@drawable/baseline_format_list_bulleted_24"
-            android:layout_marginLeft="10dp" />
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
-
-        <ImageView
-            android:id="@+id/img_logo"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginRight="10dp"
-            android:src="@drawable/img" />
-
-    </LinearLayout>
-    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Lista de solicitudes enviadas"
-        android:textSize="20sp"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:textColor="#333333" />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_marginTop="10dp"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Crear Solicitud"
-            android:layout_marginHorizontal="50dp">
-        </TextView>
-       <ImageButton
-           android:layout_width="30dp"
-           android:layout_height="30dp"
-           android:src="@drawable/baseline_add_24">
+        android:orientation="vertical">
 
-       </ImageButton>
-    </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#000000"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:elevation="4dp">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="580dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/scroll_brackground"
-        android:padding="30dp">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/baseline_format_list_bulleted_24"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logo"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lista de gestion epp enviadas"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_marginBottom="16dp" />
+
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:background="@color/white"
+                android:layout_marginBottom="16dp"
+                android:elevation="4dp"
+                android:gravity="center_vertical">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Buscar ..."
+                    android:padding="8dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@android:drawable/ic_menu_search"
+                    android:tint="#888888" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Nombre de usuario-fecha"
-                    android:textSize="13dp">
+                    android:layout_gravity="center"
+                    android:text="Crear Solicitud"
+                    android:layout_marginHorizontal="50dp">
                 </TextView>
-                <Button
-                    android:layout_width="80dp"
-                    android:layout_height="40dp"
-                    android:text="Abrir"
-                    android:textColor="@color/black"
-                    android:textSize="10dp"
-                    android:layout_marginHorizontal="18dp"
-                    android:backgroundTint="@color/Verde">
+                <ImageButton
+                    android:id="@+id/imgButton_crear"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/baseline_add_24">
 
-                </Button>
-                <Button
-                    android:layout_width="80dp"
-                    android:layout_height="40dp"
-                    android:text="descargar"
-                    android:textSize="7dp"
-                    android:textColor="@color/black"
-                    android:backgroundTint="@color/red">
-
-                </Button>
+                </ImageButton>
             </LinearLayout>
+
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_marginTop="40dp"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Nombre de usuario-fecha"
-                    android:textSize="13dp">
-                </TextView>
-                <Button
-                    android:layout_width="80dp"
-                    android:layout_height="40dp"
-                    android:text="Abrir"
-                    android:textColor="@color/black"
-                    android:textSize="10dp"
-                    android:layout_marginHorizontal="18dp"
-                    android:backgroundTint="@color/Verde">
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal"
+                    android:padding="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:elevation="2dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="10dp">
 
-                </Button>
-                <Button
-                    android:layout_width="80dp"
-                    android:layout_height="40dp"
-                    android:text="descargar"
-                    android:textSize="7dp"
-                    android:textColor="@color/black"
-                    android:backgroundTint="@color/red">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:text="Nombre de usuario - Fecha"
+                        android:textSize="14sp"
+                        android:textColor="#000000" />
 
-                </Button>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_marginTop="40dp"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:text="Detalles"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/Verde"/>
+
+                    <ImageButton
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@android:drawable/stat_sys_download_done"
+                        android:tint="#F44336"
+                        android:background="@android:color/white"
+                        android:scaleType="center"
+                        android:padding="6dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Nombre de usuario-fecha"
-                    android:textSize="13dp">
-                </TextView>
-                <Button
-                    android:layout_width="80dp"
-                    android:layout_height="40dp"
-                    android:text="Abrir"
-                    android:textColor="@color/black"
-                    android:textSize="10dp"
-                    android:layout_marginHorizontal="18dp"
-                    android:backgroundTint="@color/Verde">
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal"
+                    android:padding="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:elevation="2dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="4dp">
 
-                </Button>
-                <Button
-                    android:layout_width="80dp"
-                    android:layout_height="40dp"
-                    android:text="descargar"
-                    android:textSize="7dp"
-                    android:textColor="@color/black"
-                    android:backgroundTint="@color/red">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:text="Nombre de usuario - Fecha"
+                        android:textSize="14sp"
+                        android:textColor="#000000" />
 
-                </Button>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_marginTop="40dp"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:text="Detalles"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/Verde"/>
+
+                    <ImageButton
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@android:drawable/stat_sys_download_done"
+                        android:tint="#F44336"
+                        android:background="@android:color/white"
+                        android:scaleType="center"
+                        android:padding="6dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Nombre de usuario-fecha"
-                    android:textSize="13dp">
-                </TextView>
-                <Button
-                    android:layout_width="80dp"
-                    android:layout_height="40dp"
-                    android:text="Abrir"
-                    android:textColor="@color/black"
-                    android:textSize="10dp"
-                    android:layout_marginHorizontal="18dp"
-                    android:backgroundTint="@color/Verde">
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal"
+                    android:padding="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:elevation="2dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="4dp">
 
-                </Button>
-                <Button
-                    android:layout_width="80dp"
-                    android:layout_height="40dp"
-                    android:text="descargar"
-                    android:textSize="7dp"
-                    android:textColor="@color/black"
-                    android:backgroundTint="@color/red">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:text="Nombre de usuario - Fecha"
+                        android:textSize="14sp"
+                        android:textColor="#000000" />
 
-                </Button>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_marginTop="40dp"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:text="Detalles"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/Verde"/>
+
+                    <ImageButton
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@android:drawable/stat_sys_download_done"
+                        android:tint="#F44336"
+                        android:background="@android:color/white"
+                        android:scaleType="center"
+                        android:padding="6dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Nombre de usuario-fecha"
-                    android:textSize="13dp">
-                </TextView>
-                <Button
-                    android:layout_width="80dp"
-                    android:layout_height="40dp"
-                    android:text="Abrir"
-                    android:textColor="@color/black"
-                    android:textSize="10dp"
-                    android:layout_marginHorizontal="18dp"
-                    android:backgroundTint="@color/Verde">
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal"
+                    android:padding="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:elevation="2dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="4dp">
 
-                </Button>
-                <Button
-                    android:layout_width="80dp"
-                    android:layout_height="40dp"
-                    android:text="descargar"
-                    android:textSize="7dp"
-                    android:textColor="@color/black"
-                    android:backgroundTint="@color/red">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:text="Nombre de usuario - Fecha"
+                        android:textSize="14sp"
+                        android:textColor="#000000" />
 
-                </Button>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_marginTop="40dp"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:text="Detalles"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/Verde"/>
+
+                    <ImageButton
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@android:drawable/stat_sys_download_done"
+                        android:tint="#F44336"
+                        android:background="@android:color/white"
+                        android:scaleType="center"
+                        android:padding="6dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Nombre de usuario-fecha"
-                    android:textSize="13dp">
-                </TextView>
-                <Button
-                    android:layout_width="80dp"
-                    android:layout_height="40dp"
-                    android:text="Abrir"
-                    android:textColor="@color/black"
-                    android:textSize="10dp"
-                    android:layout_marginHorizontal="18dp"
-                    android:backgroundTint="@color/Verde">
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal"
+                    android:padding="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:elevation="2dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="4dp">
 
-                </Button>
-                <Button
-                    android:layout_width="80dp"
-                    android:layout_height="40dp"
-                    android:text="descargar"
-                    android:textSize="7dp"
-                    android:textColor="@color/black"
-                    android:backgroundTint="@color/red">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:text="Nombre de usuario - Fecha"
+                        android:textSize="14sp"
+                        android:textColor="#000000" />
 
-                </Button>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_marginTop="40dp"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:text="Detalles"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/Verde"/>
+
+                    <ImageButton
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@android:drawable/stat_sys_download_done"
+                        android:tint="#F44336"
+                        android:background="@android:color/white"
+                        android:scaleType="center"
+                        android:padding="6dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Nombre de usuario-fecha"
-                    android:textSize="13dp">
-                </TextView>
-                <Button
-                    android:layout_width="80dp"
-                    android:layout_height="40dp"
-                    android:text="Abrir"
-                    android:textColor="@color/black"
-                    android:textSize="10dp"
-                    android:layout_marginHorizontal="18dp"
-                    android:backgroundTint="@color/Verde">
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal"
+                    android:padding="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:elevation="2dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="4dp">
 
-                </Button>
-                <Button
-                    android:layout_width="80dp"
-                    android:layout_height="40dp"
-                    android:text="descargar"
-                    android:textSize="7dp"
-                    android:textColor="@color/black"
-                    android:backgroundTint="@color/red">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:text="Nombre de usuario - Fecha"
+                        android:textSize="14sp"
+                        android:textColor="#000000" />
 
-                </Button>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_marginTop="40dp"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:text="Detalles"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/Verde"/>
+
+                    <ImageButton
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@android:drawable/stat_sys_download_done"
+                        android:tint="#F44336"
+                        android:background="@android:color/white"
+                        android:scaleType="center"
+                        android:padding="6dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Nombre de usuario-fecha"
-                    android:textSize="13dp">
-                </TextView>
-                <Button
-                    android:layout_width="80dp"
-                    android:layout_height="40dp"
-                    android:text="Abrir"
-                    android:textColor="@color/black"
-                    android:textSize="10dp"
-                    android:layout_marginHorizontal="18dp"
-                    android:backgroundTint="@color/Verde">
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal"
+                    android:padding="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:elevation="2dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="4dp">
 
-                </Button>
-                <Button
-                    android:layout_width="80dp"
-                    android:layout_height="40dp"
-                    android:text="descargar"
-                    android:textSize="7dp"
-                    android:textColor="@color/black"
-                    android:backgroundTint="@color/red">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:text="Nombre de usuario - Fecha"
+                        android:textSize="14sp"
+                        android:textColor="#000000" />
 
-                </Button>
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:text="Detalles"
+                        android:textColor="@color/white"
+                        android:backgroundTint="@color/Verde"/>
+
+                    <ImageButton
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@android:drawable/stat_sys_download_done"
+                        android:tint="#F44336"
+                        android:background="@android:color/white"
+                        android:scaleType="center"
+                        android:padding="6dp" />
+                </LinearLayout>
+
             </LinearLayout>
-
-
         </LinearLayout>
+    </LinearLayout>
+</ScrollView>
 
-    </ScrollView>
-
-</LinearLayout>
