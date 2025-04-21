@@ -1,228 +1,206 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/Piel">
+    android:background="#F5F5F5">
+
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="horizontal"
-        android:background="@color/black">
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:orientation="vertical"
+        android:background="#1B1F23"
+        android:padding="8dp">
 
-        <ImageView
-            android:id="@+id/iv_logo"
-            android:layout_width="40dp"
-            android:layout_height="50dp"
-            android:src="@drawable/baseline_format_list_bulleted_24"
-            android:layout_marginLeft="10dp" />
+        <Button
+            android:text="Home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-        <View
-            android:layout_width="0dp"
+        <Button
+            android:text="Lista de Chequeo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:text="Reportes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:text="Gestión Epp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:text="Actividades Lúdicas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:text="Blog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Space
+            android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1" />
 
-        <ImageView
-            android:id="@+id/img_logo"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginRight="10dp"
-            android:src="@drawable/img" />
+        <Button
+            android:text="Más Servicios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
+        <Button
+            android:text="Salir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Nuevo Reporte"
-        android:textSize="25sp"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:textColor="#333333" />
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/scroll_brackground"
-        android:padding="30dp">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:padding="16dp">
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:gravity="end"
+            android:padding="8dp"
+            android:background="#2C3E50">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Informacion Personal"
-                android:textColor="#333333"
-                android:gravity="center"
-                android:textSize="16sp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Nombre"
-                android:textColor="#333333"
-                android:textSize="16sp" />
-
-            <EditText
-                android:id="@+id/et_nombre"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginTop="10dp"
-                android:background="#FFFFFF"
-                android:hint="Ingrese su nombre"
-                android:padding="10dp"
-                android:textColor="#333333"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Apellido"
-                android:textColor="#333333"
-                android:textSize="16sp" />
-
-            <EditText
-                android:id="@+id/et_apellido"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginTop="10dp"
-                android:background="#FFFFFF"
-                android:hint="Ingrese su apellido"
-                android:padding="10dp"
-                android:textColor="#333333"
-                android:textSize="16sp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Cédula"
-                android:textColor="#333333"
-                android:textSize="16sp" />
-
-            <EditText
-                android:id="@+id/et_cedula"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginTop="10dp"
-                android:background="#FFFFFF"
-                android:hint="Ingrese su cédula"
-                android:padding="10dp"
-                android:textColor="#333333"
-                android:textSize="16sp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Cargo"
-                android:textColor="#333333"
-                android:textSize="16sp" />
-
-            <EditText
-                android:id="@+id/et_descripcion"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginTop="10dp"
-                android:background="#FFFFFF"
-                android:hint="Ingrese su cargo"
-                android:padding="10dp"
-                android:textColor="#333333"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Producto a Solicitar"
-                android:textColor="#333333"
-                android:gravity="center"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Producto"
-                android:textColor="#333333"
-                android:textSize="16sp" />
-
-            <EditText
-                android:id="@+id/et_lugar"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginTop="10dp"
-                android:background="#FFFFFF"
-                android:hint="ingrese nombre del producto"
-                android:padding="10dp"
-                android:textColor="#333333"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Cantidad"
-                android:textColor="#333333"
-                android:textSize="16sp" />
-
-            <EditText
-                android:id="@+id/et_fecha"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="10dp"
-                android:background="#FFFFFF"
-                android:hint="Ingrese la cantidad de producto"
-                android:padding="10dp"
-                android:textColor="#333333"
-                android:textSize="16sp" />
-
-
-
+                android:text="Nombre Administrador"
+                android:textColor="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
         </LinearLayout>
 
-    </ScrollView>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Ingrese Importancia"
-        android:gravity="center"
-        android:textColor="#333333"
-        android:textSize="16sp" />
-
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal">
-
-        <RadioButton
+        <TextView
+            android:text="Reportes Recibidos"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="16dp"
             android:layout_width="wrap_content"
-            android:layout_marginHorizontal="30dp"
-            android:layout_height="wrap_content"
-            android:text="ALTA" />
+            android:layout_height="wrap_content" />
 
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="40dp"
-            android:text="MEDIA"/>
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
-            android:text="BAJA"/>
-    </RadioGroup>
 
-    <Button
-        android:id="@+id/btn_enviarReporte"
-        android:layout_width="180dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        android:backgroundTint="@color/Verde"
-        android:text="Enviar Reporte" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
 
+            <LinearLayout
+                android:id="@+id/contenedorReportes"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_margin="8dp"
+                    android:padding="12dp"
+                    android:background="#EEEEEE"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="2dp">
+
+                    <TextView
+                        android:text="Nombre Usuario - Fecha - Importancia"
+                        android:textSize="16sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:text="Abrir"
+                        android:backgroundTint="#A0E7E5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:text="!"
+                        android:textColor="#FFFFFF"
+                        android:backgroundTint="#FF6B6B"
+                        android:layout_marginStart="8dp"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="8dp"
+                    android:padding="12dp"
+                    android:background="#EEEEEE"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="2dp">
+
+                    <TextView
+                        android:text="Nombre Usuario - Fecha - Importancia"
+                        android:textSize="16sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:text="Abrir"
+                        android:backgroundTint="#A0E7E5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:text="!"
+                        android:textColor="#FFFFFF"
+                        android:backgroundTint="#FF6B6B"
+                        android:layout_marginStart="8dp"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="8dp"
+                    android:padding="12dp"
+                    android:background="#EEEEEE"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="2dp">
+
+                    <TextView
+                        android:text="Nombre Usuario - Fecha - Importancia"
+                        android:textSize="16sp"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:text="Abrir"
+                        android:backgroundTint="#A0E7E5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:text="!"
+                        android:textColor="#FFFFFF"
+                        android:backgroundTint="#FF6B6B"
+                        android:layout_marginStart="8dp"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
 </LinearLayout>
