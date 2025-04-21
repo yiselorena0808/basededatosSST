@@ -86,13 +86,13 @@
                     android:src="@drawable/img_3"
                     android:scaleType="centerInside" />
 
-                <TextView
+                <Button
+                    android:id="@+id/btn_GestionEpp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Gestion epp"
-                    android:textAlignment="center"
-                    android:textSize="16sp"
-                    android:textColor="#000000" />
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/Verde"></Button>
             </LinearLayout>
 
             <LinearLayout
@@ -111,13 +111,13 @@
                     android:src="@drawable/img_4"
                     android:scaleType="centerInside" />
 
-                <TextView
+                <Button
+                    android:id="@+id/btn_Reportes"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/black"
                     android:text="Reportes"
-                    android:textAlignment="center"
-                    android:textSize="16sp"
-                    android:textColor="#000000" />
+                    android:backgroundTint="@color/Verde"></Button>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="0dp"
@@ -135,13 +135,13 @@
                     android:src="@drawable/img_5"
                     android:scaleType="centerInside" />
 
-                <TextView
+                <Button
+                    android:id="@+id/btn_Act"
                     android:layout_width="match_parent"
+                    android:textColor="@color/black"
                     android:layout_height="wrap_content"
                     android:text="Actividades Ludicas"
-                    android:textAlignment="center"
-                    android:textSize="16sp"
-                    android:textColor="#000000" />
+                    android:backgroundTint="@color/Verde"></Button>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="0dp"
@@ -159,13 +159,13 @@
                     android:src="@drawable/img_6"
                     android:scaleType="centerInside" />
 
-                <TextView
+                <Button
+                    android:id="@+id/btn_Lista"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Lista de chequeo"
-                    android:textAlignment="center"
-                    android:textSize="16sp"
-                    android:textColor="#000000" />
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/Verde"></Button>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="0dp"
@@ -183,13 +183,13 @@
                     android:src="@drawable/img_7"
                     android:scaleType="centerInside" />
 
-                <TextView
+                <Button
+                    android:id="@+id/btn_Blog"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Blog"
-                    android:textAlignment="center"
-                    android:textSize="16sp"
-                    android:textColor="#000000" />
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/Verde"></Button>
             </LinearLayout>
             <LinearLayout
                 android:layout_width="0dp"
@@ -207,13 +207,13 @@
                     android:src="@drawable/img_8"
                     android:scaleType="centerInside" />
 
-                <TextView
+                <Button
+                    android:id="@+id/btn_Asesoramiento"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Asesoramiento"
-                    android:textAlignment="center"
-                    android:textSize="16sp"
-                    android:textColor="#000000" />
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/Verde"></Button>
             </LinearLayout>
 
         </GridLayout>
