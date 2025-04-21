@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
+    android:background="@color/Piel"
     tools:context=".Controller.MainActivity">
 
     <LinearLayout
@@ -76,7 +76,7 @@
                 android:layout_columnWeight="1"
                 android:layout_margin="8dp"
                 android:orientation="vertical"
-                android:background="#EEEEEE"
+                android:background="@color/white"
                 android:padding="12dp">
 
                 <ImageView
@@ -101,7 +101,7 @@
                 android:layout_columnWeight="1"
                 android:layout_margin="8dp"
                 android:orientation="vertical"
-                android:background="#EEEEEE"
+                android:background="@color/white"
                 android:padding="12dp">
 
                 <ImageView
@@ -125,7 +125,7 @@
                 android:layout_columnWeight="1"
                 android:layout_margin="8dp"
                 android:orientation="vertical"
-                android:background="#EEEEEE"
+                android:background="@color/white"
                 android:padding="12dp">
 
                 <ImageView
@@ -149,7 +149,7 @@
                 android:layout_columnWeight="1"
                 android:layout_margin="8dp"
                 android:orientation="vertical"
-                android:background="#EEEEEE"
+                android:background="@color/white"
                 android:padding="12dp">
 
                 <ImageView
