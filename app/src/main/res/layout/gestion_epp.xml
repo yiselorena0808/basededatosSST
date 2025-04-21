@@ -186,29 +186,42 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:text="Ingrese Importancia"
         android:gravity="center"
         android:textColor="#333333"
         android:textSize="16sp" />
 
-    <Spinner
-        android:id="@+id/sp_importancia"
-        android:layout_width="match_parent"
+    <RadioGroup
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:background="#FFFFFF"
-        android:entries="@array/importancias"
-        android:padding="10dp"
-        android:textColor="#333333"
-        android:textSize="16sp" />
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_height="wrap_content"
+            android:text="ALTA" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:text="MEDIA"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text="BAJA"/>
+    </RadioGroup>
 
     <Button
         android:id="@+id/btn_enviar"
         android:layout_width="180dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:backgroundTint="@color/Verde"
         android:text="Enviar Solicitud" />
 
