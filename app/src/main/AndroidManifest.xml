@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Sst"
         tools:targetApi="31">
         <activity
+            android:name=".Lector_Gestion"
+            android:exported="false" />
+        <activity
             android:name=".Registro_Nuevo"
             android:exported="false" />
         <activity

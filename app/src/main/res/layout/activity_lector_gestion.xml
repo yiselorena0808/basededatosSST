@@ -36,7 +36,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Gestion epp"
+        android:text="Solicitud N°n"
         android:textSize="25sp"
         android:layout_marginTop="20dp"
         android:gravity="center"
@@ -44,7 +44,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="520dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/scroll_brackground"
         android:padding="30dp">
@@ -75,7 +75,7 @@
                 android:layout_height="40dp"
                 android:layout_marginTop="10dp"
                 android:background="#FFFFFF"
-                android:hint="Ingrese su nombre"
+                android:hint="nombre ingresado"
                 android:padding="10dp"
                 android:textColor="#333333"
                 android:textSize="16sp" />
@@ -92,7 +92,7 @@
                 android:layout_height="40dp"
                 android:layout_marginTop="10dp"
                 android:background="#FFFFFF"
-                android:hint="Ingrese su apellido"
+                android:hint="apellido ingresado"
                 android:padding="10dp"
                 android:textColor="#333333"
                 android:textSize="16sp" />
@@ -111,7 +111,7 @@
                 android:layout_height="40dp"
                 android:layout_marginTop="10dp"
                 android:background="#FFFFFF"
-                android:hint="Ingrese su cédula"
+                android:hint="cedula ingresada"
                 android:padding="10dp"
                 android:textColor="#333333"
                 android:textSize="16sp" />
@@ -130,14 +130,14 @@
                 android:layout_height="40dp"
                 android:layout_marginTop="10dp"
                 android:background="#FFFFFF"
-                android:hint="Ingrese su cargo"
+                android:hint="cargo ingresado"
                 android:padding="10dp"
                 android:textColor="#333333"
                 android:textSize="16sp" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Producto a Solicitar"
+                android:text="Producto Solicitado"
                 android:textColor="#333333"
                 android:gravity="center"
                 android:textSize="16sp" />
@@ -155,7 +155,7 @@
                 android:layout_height="40dp"
                 android:layout_marginTop="10dp"
                 android:background="#FFFFFF"
-                android:hint="ingrese nombre del producto"
+                android:hint="nombre del producto ingresado"
                 android:padding="10dp"
                 android:textColor="#333333"
                 android:textSize="16sp" />
@@ -173,56 +173,54 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="10dp"
                 android:background="#FFFFFF"
-                android:hint="Ingrese la cantidad de producto"
+                android:hint="la cantidad de producto ingresado"
                 android:padding="10dp"
                 android:textColor="#333333"
                 android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Importancia de solicitud"
+                android:gravity="center"
+                android:textColor="#333333"
+                android:textSize="16sp" />
 
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
 
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_height="wrap_content"
+                    android:text="ALTA" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="40dp"
+                    android:text="MEDIA"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:text="BAJA"/>
+            </RadioGroup>
 
         </LinearLayout>
 
     </ScrollView>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Ingrese Importancia"
-        android:gravity="center"
-        android:textColor="#333333"
-        android:textSize="16sp" />
-
-    <RadioGroup
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal">
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_marginHorizontal="30dp"
-            android:layout_height="wrap_content"
-            android:text="ALTA" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="40dp"
-            android:text="MEDIA"/>
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
-            android:text="BAJA"/>
-    </RadioGroup>
 
     <Button
-        android:id="@+id/btn_enviarSolicitud"
+        android:id="@+id/btn_regresarGestion"
         android:layout_width="180dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:backgroundTint="@color/Verde"
-        android:text="Enviar Solicitud" />
+        android:text="Regresar" />
 
 </LinearLayout>

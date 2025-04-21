@@ -102,6 +102,7 @@
                         android:textColor="#000000" />
 
                     <Button
+                        android:id="@+id/btndetallesListaChequeo1"
                         android:layout_width="100dp"
                         android:layout_height="40dp"
                         android:text="Detalles"
@@ -137,6 +138,7 @@
                         android:textColor="#000000" />
 
                     <Button
+                        android:id="@+id/btndetallesListaChequeo2"
                         android:layout_width="100dp"
                         android:layout_height="40dp"
                         android:text="Detalles"
@@ -172,6 +174,7 @@
                         android:textColor="#000000" />
 
                     <Button
+                        android:id="@+id/btndetallesListaChequeo3"
                         android:layout_width="100dp"
                         android:layout_height="40dp"
                         android:text="Detalles"
@@ -207,6 +210,7 @@
                         android:textColor="#000000" />
 
                     <Button
+                        android:id="@+id/btndetallesListaChequeo4"
                         android:layout_width="100dp"
                         android:layout_height="40dp"
                         android:text="Detalles"
@@ -242,6 +246,7 @@
                         android:textColor="#000000" />
 
                     <Button
+                        android:id="@+id/btndetallesListaChequeo5"
                         android:layout_width="100dp"
                         android:layout_height="40dp"
                         android:text="Detalles"
@@ -277,6 +282,7 @@
                         android:textColor="#000000" />
 
                     <Button
+                        android:id="@+id/btndetallesListaChequeo6"
                         android:layout_width="100dp"
                         android:layout_height="40dp"
                         android:text="Detalles"
@@ -312,6 +318,7 @@
                         android:textColor="#000000" />
 
                     <Button
+                        android:id="@+id/btndetallesListaChequeo7"
                         android:layout_width="100dp"
                         android:layout_height="40dp"
                         android:text="Detalles"

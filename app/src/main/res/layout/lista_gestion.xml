@@ -118,6 +118,7 @@
                         android:textColor="#000000" />
 
                     <Button
+                        android:id="@+id/btndetalles1"
                         android:layout_width="100dp"
                         android:layout_height="40dp"
                         android:text="Detalles"
@@ -153,6 +154,7 @@
                         android:textColor="#000000" />
 
                     <Button
+                        android:id="@+id/btndetalles2"
                         android:layout_width="100dp"
                         android:layout_height="40dp"
                         android:text="Detalles"
@@ -188,6 +190,7 @@
                         android:textColor="#000000" />
 
                     <Button
+                        android:id="@+id/btndetalles3"
                         android:layout_width="100dp"
                         android:layout_height="40dp"
                         android:text="Detalles"
@@ -223,6 +226,7 @@
                         android:textColor="#000000" />
 
                     <Button
+                        android:id="@+id/btndetalles4"
                         android:layout_width="100dp"
                         android:layout_height="40dp"
                         android:text="Detalles"
@@ -258,6 +262,7 @@
                         android:textColor="#000000" />
 
                     <Button
+                        android:id="@+id/btndetalles5"
                         android:layout_width="100dp"
                         android:layout_height="40dp"
                         android:text="Detalles"
@@ -293,6 +298,7 @@
                         android:textColor="#000000" />
 
                     <Button
+                        android:id="@+id/btndetalles6"
                         android:layout_width="100dp"
                         android:layout_height="40dp"
                         android:text="Detalles"
@@ -328,6 +334,7 @@
                         android:textColor="#000000" />
 
                     <Button
+                        android:id="@+id/btndetalles7"
                         android:layout_width="100dp"
                         android:layout_height="40dp"
                         android:text="Detalles"
