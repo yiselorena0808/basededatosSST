@@ -4,8 +4,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
     android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/black">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_format_list_bulleted_24"
+            android:layout_marginLeft="10dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/img" />
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/tvTitulo"
@@ -75,7 +101,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:minHeight="48dp"
-                android:backgroundTint="@color/azul"
+                android:backgroundTint="@color/Verde"
                 android:text="@string/subir_imagen" />
 
             <Button
@@ -83,7 +109,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:backgroundTint="@color/azul"
+                android:backgroundTint="@color/Verde"
                 android:minHeight="48dp"
                 android:text="@string/subir_video" />
 
@@ -92,7 +118,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
-                android:backgroundTint="@color/azul"
+                android:backgroundTint="@color/Verde"
                 android:minHeight="48dp"
                 android:text="@string/enviar_evidencia" />
         </LinearLayout>
