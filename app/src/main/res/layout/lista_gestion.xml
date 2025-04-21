@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Controller.ListaGestion">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/black">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_format_list_bulleted_24"
+            android:layout_marginLeft="10dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/img" />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lista de solicitudes enviadas"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="#333333" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Crear Solicitud"
+            android:layout_marginHorizontal="50dp">
+        </TextView>
+       <ImageButton
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:src="@drawable/baseline_add_24">
+
+       </ImageButton>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="580dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/scroll_brackground"
+        android:padding="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre de usuario-fecha"
+                    android:textSize="13dp">
+                </TextView>
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:text="Abrir"
+                    android:textSize="10dp"
+                    android:layout_marginHorizontal="18dp"
+                    android:backgroundTint="@color/black">
+
+                </Button>
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:text="descargar"
+                    android:textSize="7dp"
+                    android:backgroundTint="@color/black">
+
+                </Button>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre de usuario-fecha"
+                    android:textSize="13dp">
+                </TextView>
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:text="Abrir"
+                    android:textSize="10dp"
+                    android:layout_marginHorizontal="18dp"
+                    android:backgroundTint="@color/black">
+
+                </Button>
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:text="descargar"
+                    android:textSize="7dp"
+                    android:backgroundTint="@color/black">
+
+                </Button>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre de usuario-fecha"
+                    android:textSize="13dp">
+                </TextView>
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:text="Abrir"
+                    android:textSize="10dp"
+                    android:layout_marginHorizontal="18dp"
+                    android:backgroundTint="@color/black">
+
+                </Button>
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:text="descargar"
+                    android:textSize="7dp"
+                    android:backgroundTint="@color/black">
+
+                </Button>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre de usuario-fecha"
+                    android:textSize="13dp">
+                </TextView>
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:text="Abrir"
+                    android:textSize="10dp"
+                    android:layout_marginHorizontal="18dp"
+                    android:backgroundTint="@color/black">
+
+                </Button>
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:text="descargar"
+                    android:textSize="7dp"
+                    android:backgroundTint="@color/black">
+
+                </Button>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre de usuario-fecha"
+                    android:textSize="13dp">
+                </TextView>
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:text="Abrir"
+                    android:textSize="10dp"
+                    android:layout_marginHorizontal="18dp"
+                    android:backgroundTint="@color/black">
+
+                </Button>
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:text="descargar"
+                    android:textSize="7dp"
+                    android:backgroundTint="@color/black">
+
+                </Button>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre de usuario-fecha"
+                    android:textSize="13dp">
+                </TextView>
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:text="Abrir"
+                    android:textSize="10dp"
+                    android:layout_marginHorizontal="18dp"
+                    android:backgroundTint="@color/black">
+
+                </Button>
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:text="descargar"
+                    android:textSize="7dp"
+                    android:backgroundTint="@color/black">
+
+                </Button>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre de usuario-fecha"
+                    android:textSize="13dp">
+                </TextView>
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:text="Abrir"
+                    android:textSize="10dp"
+                    android:layout_marginHorizontal="18dp"
+                    android:backgroundTint="@color/black">
+
+                </Button>
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:text="descargar"
+                    android:textSize="7dp"
+                    android:backgroundTint="@color/black">
+
+                </Button>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre de usuario-fecha"
+                    android:textSize="13dp">
+                </TextView>
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:text="Abrir"
+                    android:textSize="10dp"
+                    android:layout_marginHorizontal="18dp"
+                    android:backgroundTint="@color/black">
+
+                </Button>
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:text="descargar"
+                    android:textSize="7dp"
+                    android:backgroundTint="@color/black">
+
+                </Button>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
