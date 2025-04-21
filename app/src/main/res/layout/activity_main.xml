@@ -10,14 +10,13 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
-        android:background="@color/Verde"
-        android:padding="10dp">
+        android:background="@color/black">
 
         <ImageView
             android:id="@+id/iv_logo"
             android:layout_width="40dp"
-            android:layout_height="30dp"
-            android:src="@drawable/img"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_format_list_bulleted_24"
             android:layout_marginLeft="10dp" />
 
         <View
@@ -26,18 +25,18 @@
             android:layout_weight="1" />
 
         <ImageView
-            android:id="@+id/img_salir"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:src="@drawable/img_1"
-            android:layout_marginRight="10dp" />
+            android:id="@+id/img_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/img" />
 
     </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Reportes"
+        android:text="Gestion epp"
         android:textSize="25sp"
         android:layout_marginTop="20dp"
         android:gravity="center"
@@ -58,6 +57,14 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="Informacion Personal"
+                android:textColor="#333333"
+                android:gravity="center"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:text="Nombre"
                 android:textColor="#333333"
                 android:textSize="16sp" />
@@ -69,6 +76,23 @@
                 android:layout_marginTop="10dp"
                 android:background="#FFFFFF"
                 android:hint="Ingrese su nombre"
+                android:padding="10dp"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Apellido"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_apellido"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF"
+                android:hint="Ingrese su apellido"
                 android:padding="10dp"
                 android:textColor="#333333"
                 android:textSize="16sp" />
@@ -96,25 +120,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Lugar"
-                android:textColor="#333333"
-                android:textSize="16sp" />
-
-            <EditText
-                android:id="@+id/et_lugar"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginTop="10dp"
-                android:background="#FFFFFF"
-                android:hint="Ingrese su lugar"
-                android:padding="10dp"
-                android:textColor="#333333"
-                android:textSize="16sp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:text="Cargo"
                 android:textColor="#333333"
                 android:textSize="16sp" />
@@ -125,24 +130,6 @@
                 android:layout_height="40dp"
                 android:layout_marginTop="10dp"
                 android:background="#FFFFFF"
-                android:hint="Ingrese su descripcion"
-                android:padding="10dp"
-                android:textColor="#333333"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Descripcion"
-                android:textColor="#333333"
-                android:textSize="16sp" />
-
-            <EditText
-                android:id="@+id/et_cargo"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="10dp"
-                android:background="#FFFFFF"
                 android:hint="Ingrese su cargo"
                 android:padding="10dp"
                 android:textColor="#333333"
@@ -150,8 +137,33 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="Producto a Solicitar"
+                android:textColor="#333333"
+                android:gravity="center"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Fecha"
+                android:text="Producto"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_lugar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFF"
+                android:hint="ingrese nombre del producto"
+                android:padding="10dp"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Cantidad"
                 android:textColor="#333333"
                 android:textSize="16sp" />
 
@@ -161,37 +173,11 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="10dp"
                 android:background="#FFFFFF"
-                android:hint="Ingrese la fecha de suceso"
+                android:hint="Ingrese la cantidad de producto"
                 android:padding="10dp"
                 android:textColor="#333333"
                 android:textSize="16sp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Evidencias"
-                android:textColor="#333333"
-                android:textSize="16sp" />
-            <EditText
-                android:id="@+id/et_Evidencias"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="10dp"
-                android:background="#FFFFFF"
-                android:hint="Ingrese evidencias"
-                android:padding="10dp"
-                android:textColor="#333333"
-                android:textSize="16sp" />
-
-            <ImageButton
-                android:layout_width="180dp"
-                android:layout_height="40dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:backgroundTint="@color/Verde">
-
-            </ImageButton>
 
 
         </LinearLayout>
@@ -209,7 +195,7 @@
     <Spinner
         android:id="@+id/sp_importancia"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:background="#FFFFFF"
         android:entries="@array/importancias"
@@ -224,6 +210,6 @@
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:backgroundTint="@color/Verde"
-        android:text="Enviar Reportes" />
+        android:text="Enviar Solicitud" />
 
 </LinearLayout>
