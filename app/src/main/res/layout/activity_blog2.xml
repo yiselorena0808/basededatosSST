@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Blog2"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/Piel">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -35,20 +36,39 @@
 
     </LinearLayout>
 
-    <Button
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crea una nueva publicacion"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            />
+
+
+        <Button
         android:layout_width="120dp"
         android:layout_height="50dp"
-        android:layout_margin="30dp"
+        android:layout_margin="10dp"
         android:hint="Regresar"
         android:backgroundTint="@color/back"/>
 
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_background"
         android:orientation="vertical"
-        android:layout_margin="20dp">
+        android:layout_margin="10dp">
 
         <EditText
             android:id="@+id/txttitu"
@@ -93,7 +113,8 @@
                 android:layout_height="50dp"
                 android:hint="ADJUNTAR"
                 android:layout_margin="30dp"
-                android:backgroundTint="@color/fondo"
+                android:backgroundTint="@color/Verde"
+                android:textColorHint="@color/white"
                 />
 
             <TextView
@@ -111,8 +132,9 @@
             android:id="@+id/txtcomen"
             android:layout_width="220dp"
             android:layout_height="50dp"
-            android:backgroundTint="@color/fondo"
+            android:backgroundTint="@color/Verde"
             android:hint="Publicar"
+            android:textColorHint="@color/white"
             android:textSize="20dp"
             android:layout_gravity="center"
             android:layout_margin="15dp"
