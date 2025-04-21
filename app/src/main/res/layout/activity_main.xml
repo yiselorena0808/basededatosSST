@@ -173,7 +173,7 @@
                 android:layout_columnWeight="1"
                 android:layout_margin="8dp"
                 android:orientation="vertical"
-                android:background="#EEEEEE"
+                android:background="@color/white"
                 android:padding="12dp">
 
                 <ImageView
@@ -197,7 +197,7 @@
                 android:layout_columnWeight="1"
                 android:layout_margin="8dp"
                 android:orientation="vertical"
-                android:background="#EEEEEE"
+                android:background="@color/white"
                 android:padding="12dp">
 
                 <ImageView
