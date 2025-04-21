@@ -4,7 +4,7 @@ import android.content.ContentValues;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
-import android.view.View;
+
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,7 +14,7 @@ import android.widget.Toast;
 import com.example.sst.Model.DBHelper;
 import com.example.sst.R;
 
-public class MainActivity extends AppCompatActivity {
+public class GestionEpp extends AppCompatActivity {
     private DBHelper dbHelper;
     private EditText  etNombre,etCedula,etCargo,etLugar,etdescripcion,etfecha;
     private Spinner sp_importancia;
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.gestion_epp);
         dbHelper = new DBHelper(this);
         etNombre = findViewById(R.id.et_nombre);
         etCedula = findViewById(R.id.et_cedula);
