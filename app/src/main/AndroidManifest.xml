@@ -19,6 +19,9 @@
             android:name=".Lector_Gestion"
             android:exported="false" />
         <activity
+            android:name=".Lector_Reportes"
+            android:exported="false" />
+        <activity
             android:name=".Registro_Nuevo"
             android:exported="false" />
         <activity
