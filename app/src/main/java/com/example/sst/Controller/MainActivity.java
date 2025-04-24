@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         binding.btnGestionEpp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, GestionEpp.class));
+                startActivity(new Intent(MainActivity.this, ListaGestion.class));
             }
         });
 
@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, ReportesRecibidos.class));
+
             }
         });
 
