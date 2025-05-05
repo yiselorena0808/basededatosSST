@@ -335,8 +335,6 @@
                         android:padding="6dp" />
                 </LinearLayout>
 
-                <!-- Puedes duplicar el bloque de arriba para más elementos -->
-
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
