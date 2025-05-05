@@ -112,7 +112,7 @@
                 android:id="@+id/btnSubirImagen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="70dp"
+                android:layout_marginTop="10dp"
                 android:minHeight="48dp"
                 android:backgroundTint="@color/Verde"
                 android:text="@string/subir_imagen" />
@@ -121,7 +121,7 @@
                 android:id="@+id/btnSubirVideo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="10dp"
                 android:backgroundTint="@color/Verde"
                 android:minHeight="48dp"
                 android:text="@string/subir_video" />
