@@ -6,6 +6,7 @@
     android:orientation="vertical"
     android:background="@color/Piel">
 
+    <!-- Barra superior -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -30,18 +31,18 @@
             android:layout_height="50dp"
             android:layout_marginRight="10dp"
             android:src="@drawable/img" />
-
     </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Solicitud N°n"
+        android:text="Lector de Reportes"
         android:textSize="25sp"
         android:layout_marginTop="20dp"
         android:gravity="center"
         android:textColor="#333333" />
 
+    <!-- Contenido desplazable -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="520dp"
@@ -54,166 +55,175 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_width="match_parent"
+            <!-- Campo Nombre -->
+            <TextView android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Informacion Personal"
+                android:text="Nombre Usuario:"
                 android:textColor="#333333"
-                android:gravity="center"
-                android:textSize="16sp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Nombre"
-                android:textColor="#333333"
-                android:textSize="16sp" />
+                android:textSize="16sp"/>
 
             <EditText
-                android:id="@+id/et_nombre"
+                android:id="@+id/et_nombre_usuario"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:layout_marginTop="10dp"
                 android:background="#FFFFFF"
-                android:hint="nombre ingresado"
-                android:padding="10dp"
-                android:textColor="#333333"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
+                android:hint="Ingrese nombre"
+                android:padding="10dp"/>
+
+            <!-- Cargo -->
+            <TextView android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Apellido"
+                android:text="Cargo del usuario:"
                 android:textColor="#333333"
-                android:textSize="16sp" />
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"/>
 
             <EditText
-                android:id="@+id/et_apellido"
+                android:id="@+id/et_cargo"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:layout_marginTop="10dp"
                 android:background="#FFFFFF"
-                android:hint="apellido ingresado"
-                android:padding="10dp"
-                android:textColor="#333333"
-                android:textSize="16sp" />
+                android:hint="Ingrese cargo"
+                android:padding="10dp"/>
 
-            <TextView
-                android:layout_width="match_parent"
+            <!-- Cédula -->
+            <TextView android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Cédula"
+                android:text="Cédula:"
                 android:textColor="#333333"
-                android:textSize="16sp" />
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"/>
 
             <EditText
                 android:id="@+id/et_cedula"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:layout_marginTop="10dp"
                 android:background="#FFFFFF"
-                android:hint="cedula ingresada"
-                android:padding="10dp"
-                android:textColor="#333333"
-                android:textSize="16sp" />
+                android:hint="Ingrese cédula"
+                android:padding="10dp"/>
 
-            <TextView
-                android:layout_width="match_parent"
+            <!-- Fecha -->
+            <TextView android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Cargo"
+                android:text="Fecha:"
                 android:textColor="#333333"
-                android:textSize="16sp" />
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"/>
 
             <EditText
-                android:id="@+id/et_descripcion"
+                android:id="@+id/et_fecha"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:layout_marginTop="10dp"
                 android:background="#FFFFFF"
-                android:hint="cargo ingresado"
-                android:padding="10dp"
-                android:textColor="#333333"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
+                android:hint="Ingrese fecha"
+                android:padding="10dp"/>
+
+            <!-- Lugar -->
+            <TextView android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Producto Solicitado"
+                android:text="Lugar:"
                 android:textColor="#333333"
-                android:gravity="center"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Producto"
-                android:textColor="#333333"
-                android:textSize="16sp" />
+                android:textSize="16sp"/>
 
             <EditText
                 android:id="@+id/et_lugar"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:layout_marginTop="10dp"
                 android:background="#FFFFFF"
-                android:hint="nombre del producto ingresado"
-                android:padding="10dp"
-                android:textColor="#333333"
-                android:textSize="16sp" />
-            <TextView
-                android:layout_width="match_parent"
+                android:hint="Ingrese lugar"
+                android:padding="10dp"/>
+
+            <!-- Descripción -->
+            <TextView android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Cantidad"
+                android:text="Descripción:"
                 android:textColor="#333333"
-                android:textSize="16sp" />
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"/>
 
             <EditText
-                android:id="@+id/et_fecha"
+                android:id="@+id/et_descripcion"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="10dp"
+                android:layout_height="40dp"
                 android:background="#FFFFFF"
-                android:hint="la cantidad de producto ingresado"
-                android:padding="10dp"
-                android:textColor="#333333"
-                android:textSize="16sp" />
-            <TextView
+                android:hint="Ingrese descripción"
+                android:padding="10dp"/>
+
+            <!-- Imagen y Archivos en una fila -->
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="Importancia de solicitud"
-                android:gravity="center"
-                android:textColor="#333333"
-                android:textSize="16sp" />
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
 
-            <RadioGroup
-                android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Imagen:"
+                        android:textColor="#333333"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_imagen"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#FFFFFF"
+                        android:hint="Ruta imagen"
+                        android:padding="10dp"/>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="16dp"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Archivos:"
+                        android:textColor="#333333"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_archivos"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#FFFFFF"
+                        android:hint="Ruta archivos"
+                        android:padding="10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Spinner -->
+            <TextView android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="Selecciona un estado:"
+                android:textColor="#333333"
                 android:layout_marginTop="10dp"
-                android:orientation="horizontal">
+                android:textSize="16sp"/>
 
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_marginHorizontal="30dp"
-                    android:layout_height="wrap_content"
-                    android:text="ALTA" />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="40dp"
-                    android:text="MEDIA"/>
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="20dp"
-                    android:text="BAJA"/>
-            </RadioGroup>
-
+            <Spinner
+                android:id="@+id/spinner_estado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:padding="5dp"/>
         </LinearLayout>
-
     </ScrollView>
 
+    <!-- Botón -->
     <Button
         android:id="@+id/btnregresarGestion"
         android:layout_width="180dp"
@@ -222,5 +232,4 @@
         android:layout_marginTop="30dp"
         android:backgroundTint="@color/Verde"
         android:text="Regresar" />
-
 </LinearLayout>
