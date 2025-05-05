@@ -48,19 +48,25 @@
         android:fontFamily="sans-serif-medium" />
 
     <!-- Botón crear publicación -->
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnCrear"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="+ Nueva publicación"
-        app:cornerRadius="12dp"
-        app:backgroundTint="@color/Verde"
-        android:textColor="@android:color/white"
-        android:layout_gravity="end"
-        android:layout_marginTop="12dp"
-        android:textSize="14sp"
-        android:icon="@android:drawable/ic_input_add"
-        android:iconPadding="6dp" />
+        android:orientation="">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Crear Solicitud"
+            android:layout_marginHorizontal="50dp">
+        </TextView>
+        <ImageButton
+            android:id="@+id/imgButton_crear"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_add_24">
+
+        </ImageButton>
+    </LinearLayout>
 
     <!-- Lista de publicaciones -->
     <!-- Puedes duplicar este bloque para mostrar varias publicaciones -->
@@ -68,12 +74,12 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#fdf3f1">
+        android:background="@drawable/rounded_background">
     <com.google.android.material.card.MaterialCardView
         android:layout_width="350dp"
         android:layout_gravity="center"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+
         app:cardElevation="2dp"
         app:cardCornerRadius="8dp"
         app:strokeWidth="1dp"
@@ -154,7 +160,7 @@
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 
-        
+
 
     <!-- Puedes duplicar el bloque de publicación para añadir más -->
     </ScrollView>
