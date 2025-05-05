@@ -3,249 +3,194 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
- <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="0dp"
-    android:background="#fdf3f1">
+    android:orientation="vertical"
+    android:background="@color/Piel">
 
+    ```
+    <!-- Barra superior -->
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/black">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_format_list_bulleted_24"
+            android:layout_marginLeft="10dp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/logo" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:text="Lista de Chequeo"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="#333333" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:background="#000000"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
-            android:elevation="4dp">
-
-            <ImageView
-                android:layout_width="34dp"
-                android:layout_height="44dp"
-                android:src="@android:drawable/ic_menu_sort_by_size"
-                android:tint="#FFFFFF"
-                android:layout_alignParentStart="true"
-                android:layout_centerVertical="true" />
-
-            <ImageView
-                android:layout_width="54dp"
-                android:layout_height="54dp"
-                android:src="@drawable/logo"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true" />
-        </RelativeLayout>
-
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/scroll_brackground"
+        android:padding="30dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="#fdf3f1"
-            android:padding="24dp"
-            android:elevation="4dp">
+            android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Lista De Chequeo"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                android:textColor="#222222"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="20dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
+            <!-- Nombre Usuario -->
+            <TextView android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Nombre Usuario:"
                 android:textColor="#333333"
-                android:textStyle="bold"
-                android:layout_marginBottom="4dp"/>
-
+                android:textSize="16sp"/>
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:backgroundTint="#CCCCCC"/>
+                android:layout_height="40dp"
+                android:background="#FFFFFF"
+                android:padding="10dp"/>
 
+            <!-- Fecha y Hora -->
+            <TextView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fecha y Hora:"
+                android:textColor="#333333"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginBottom="16dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Fecha:"
-                    android:textColor="#333333"
-                    android:textStyle="bold"
-                    android:layout_marginEnd="8dp"/>
+                android:orientation="horizontal">
 
                 <EditText
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:inputType="date"
-                    android:backgroundTint="#CCCCCC"/>
+                    android:layout_height="40dp"
+                    android:hint="Fecha"
+                    android:padding="10dp"
+                    android:background="#FFFFFF"/>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Hora:"
-                    android:textColor="#333333"
-                    android:textStyle="bold"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="8dp"/>
+                <Space android:layout_width="16dp" android:layout_height="wrap_content"/>
 
                 <EditText
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:inputType="time"
-                    android:backgroundTint="#CCCCCC"/>
+                    android:layout_height="40dp"
+                    android:hint="Hora"
+                    android:padding="10dp"
+                    android:background="#FFFFFF"/>
             </LinearLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
+            <!-- Modelo y Marca -->
+            <TextView android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Modelo:"
                 android:textColor="#333333"
-                android:textStyle="bold"
-                android:layout_marginBottom="4dp"/>
-
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"/>
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:backgroundTint="#CCCCCC"/>
+                android:layout_height="40dp"
+                android:background="#FFFFFF"
+                android:hint="Ingrese Modelo"
+                android:padding="10dp"/>
 
-
-            <TextView
-                android:layout_width="wrap_content"
+            <TextView android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Marca:"
                 android:textColor="#333333"
-                android:textStyle="bold"
-                android:layout_marginBottom="4dp"/>
-
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"/>
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:backgroundTint="#CCCCCC"/>
+                android:layout_height="40dp"
+                android:background="#FFFFFF"
+                android:hint="Ingrese Marca"
+                android:padding="10dp"/>
 
+            <!-- SOAT y Tecnicomecánica -->
+            <TextView android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Documentos:"
+                android:textColor="#333333"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center"
-                android:layout_marginBottom="16dp"
-                android:weightSum="2">
+                android:orientation="horizontal">
 
-                <LinearLayout
+                <RadioGroup
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center_horizontal">
-
+                    android:orientation="horizontal">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Soat:"
+                        android:text="SOAT:"
                         android:textColor="#333333"
-                        android:textStyle="bold"
-                        android:layout_marginBottom="4dp" />
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="8dp"/>
+                    <RadioButton android:text="Sí"/>
+                    <RadioButton android:text="No"/>
+                </RadioGroup>
 
-                    <RadioGroup
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <RadioButton
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Sí" />
-
-                        <RadioButton
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="No"
-                            android:layout_marginStart="8dp" />
-                    </RadioGroup>
-                </LinearLayout>
-
-                <!-- Tecnicomecánica -->
-                <LinearLayout
+                <RadioGroup
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center_horizontal">
-
+                    android:orientation="horizontal">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Tecnicomecánica:"
+                        android:text="Técnico:"
                         android:textColor="#333333"
-                        android:textStyle="bold"
-                        android:layout_marginBottom="4dp" />
-
-                    <RadioGroup
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <RadioButton
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Sí" />
-
-                        <RadioButton
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="No"
-                            android:layout_marginStart="8dp" />
-                    </RadioGroup>
-                </LinearLayout>
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="8dp"/>
+                    <RadioButton android:text="Sí"/>
+                    <RadioButton android:text="No"/>
+                </RadioGroup>
             </LinearLayout>
 
             <!-- Kilometraje -->
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Kilometraje:"
                 android:textColor="#333333"
-                android:textStyle="bold"
-                android:layout_marginBottom="4dp"/>
-
+                android:layout_marginTop="10dp"
+                android:textSize="16sp" />
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:inputType="number"
-                android:layout_marginBottom="24dp"
-                android:backgroundTint="#A5F2D4"/>
+                android:background="#FFFFFF"
+                android:hint="Kilometraje"
+                android:padding="10dp" />
 
             <!-- Características -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="CARACTERISTICAS"
-                android:textColor="#333333"
-                android:textStyle="bold"
-                android:layout_marginBottom="8dp"/>
-
             <TableLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:stretchColumns="*"
-                android:shrinkColumns="*"
+                android:stretchColumns="1"
+                android:shrinkColumns="1"
                 android:layout_marginBottom="24dp">
 
                 <TableRow android:background="#DDDDDD">
@@ -269,33 +214,56 @@
                         android:layout_weight="1"/>
                 </TableRow>
 
+                <!-- Ejemplo de una fila en la tabla -->
                 <TableRow>
-
                     <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:text="Enviar Estado"
-                        android:textColor="#333333"
+                        android:text="Luz"
                         android:padding="8dp"
                         android:layout_weight="1"/>
 
-                    <CheckBox
+                    <RadioGroup
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioButton android:text="Sí"/>
+                        <RadioButton android:text="No"/>
+                    </RadioGroup>
+                </TableRow>
+
+                <!-- Otra fila de ejemplo -->
+                <TableRow>
+                    <TextView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
+                        android:text="Frenos"
+                        android:padding="8dp"
                         android:layout_weight="1"/>
+
+                    <RadioGroup
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioButton android:text="Sí"/>
+                        <RadioButton android:text="No"/>
+                    </RadioGroup>
                 </TableRow>
             </TableLayout>
 
-            <!-- Botón Guardar -->
-            <Button
-                android:id="@+id/btnGuardar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Guardar Lista"
-                android:backgroundTint="@color/Verde"
-                android:textColor="@color/white"/>
         </LinearLayout>
-    </LinearLayout>
- </ScrollView>
+    </ScrollView>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/Verde"
+        android:text="Guardar Lista"
+        android:textColor="@color/white"/>
+    ```
+
 </LinearLayout>
