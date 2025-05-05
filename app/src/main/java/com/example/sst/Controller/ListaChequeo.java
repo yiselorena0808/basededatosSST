@@ -10,6 +10,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.sst.Lector_listas;
 import com.example.sst.Reportes_Usuarioss;
 import com.example.sst.databinding.ActivityListaChequeoBinding;
 
@@ -32,7 +33,7 @@ public class ListaChequeo extends AppCompatActivity {
         binding.btnGuardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ListaChequeo.this, Reportes_Usuarioss.class));
+                startActivity(new Intent(ListaChequeo.this, Lector_listas.class));
             }
         });
 
