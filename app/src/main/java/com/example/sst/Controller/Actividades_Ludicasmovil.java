@@ -11,6 +11,9 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.sst.Lector_Actividades;
+import com.example.sst.Lista_Actividades;
 import com.example.sst.databinding.ActivityActividadesLudicasmovilBinding;
 
 import com.example.sst.R;
@@ -29,7 +32,12 @@ public class Actividades_Ludicasmovil extends AppCompatActivity {
         View view = binding.getRoot();
         setContentView(view);
 
-
+        binding.btnEnviarEvidencia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Actividades_Ludicasmovil.this, Lista_Actividades.class));
+            }
+        });
 
     }
 

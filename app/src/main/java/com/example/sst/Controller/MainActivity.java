@@ -8,6 +8,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 
 import com.example.sst.Blog1;
+import com.example.sst.Lector_Reporrrtes;
+import com.example.sst.Lista_Actividades;
 import com.example.sst.R;
 import com.example.sst.databinding.ActivityMainBinding;
 
@@ -35,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         binding.btnReportes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, ReportesRecibidos.class));
+                startActivity(new Intent(MainActivity.this, Lector_Reporrrtes.class));
 
             }
         });
@@ -43,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         binding.btnAct.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, Actividades_Ludicasmovil.class));
+                startActivity(new Intent(MainActivity.this, Lista_Actividades.class));
             }
         });
 
