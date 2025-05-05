@@ -8,6 +8,7 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 
+import com.example.sst.Blog1;
 import com.example.sst.R;
 import com.example.sst.ReportesRecibidos;
 import com.example.sst.databinding.ActivityMainBinding;
@@ -58,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
         binding.btnBlog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, Blog.class));
+                startActivity(new Intent(MainActivity.this, Blog1.class));
             }
         });
     }
