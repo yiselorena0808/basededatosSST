@@ -5,37 +5,39 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Blog1"
     android:orientation="vertical"
     android:background="@color/Piel"
-    >
+    tools:context=".Blog1">
 
+    <!-- Encabezado -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
-        android:background="@color/black">
+        android:background="@color/black"
+        android:paddingHorizontal="10dp">
 
         <ImageView
             android:id="@+id/iv_logo"
             android:layout_width="40dp"
-            android:layout_height="50dp"
+            android:layout_height="match_parent"
             android:src="@drawable/baseline_format_list_bulleted_24"
-            android:layout_marginLeft="10dp" />
+            android:contentDescription="Menú" />
 
         <View
             android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_height="match_parent"
             android:layout_weight="1" />
 
         <ImageView
             android:id="@+id/img_logo"
             android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginRight="10dp"
-            android:src="@drawable/img" />
-
+            android:layout_height="match_parent"
+            android:src="@drawable/img"
+            android:contentDescription="Logo" />
     </LinearLayout>
+
+    <!-- Título del blog -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -47,121 +49,212 @@
         android:layout_marginTop="16dp"
         android:fontFamily="sans-serif-medium" />
 
-    <!-- Botón crear publicación -->
+    <!-- Crear publicación -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="">
+        android:gravity="center"
+        android:paddingVertical="8dp">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:text="Crear Solicitud"
-            android:layout_marginHorizontal="50dp">
-        </TextView>
-        <ImageButton
-            android:id="@+id/imgButton_crear"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:src="@drawable/baseline_add_24">
+            android:layout_marginEnd="16dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
 
-        </ImageButton>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btncrear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_add_24"
+            app:backgroundTint="@color/Verde"
+            android:contentDescription="Botón para crear publicación" />
     </LinearLayout>
 
-    <!-- Lista de publicaciones -->
-    <!-- Puedes duplicar este bloque para mostrar varias publicaciones -->
-
+    <!-- Publicaciones -->
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
         android:background="@drawable/rounded_background">
-    <com.google.android.material.card.MaterialCardView
-        android:layout_width="350dp"
-        android:layout_gravity="center"
-        android:layout_height="wrap_content"
-
-        app:cardElevation="2dp"
-        app:cardCornerRadius="8dp"
-        app:strokeWidth="1dp"
-        app:strokeColor="@color/white"
-        android:backgroundTint="@color/white">
 
         <LinearLayout
-            android:layout_width="350dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_gravity="center"
-            android:padding="12dp">
+            android:paddingBottom="16dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Título de la publicación"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:textSize="16sp" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="140dp"
-                android:layout_marginTop="8dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/img_7"
-                android:background="@drawable/cuadrado" />
-
-            <TextView
+            <!-- Publicación 1 -->
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Descripción breve de la publicación. Aquí puedes colocar un resumen de 2 o 3 líneas como vista previa."
-                android:textColor="@android:color/darker_gray"
-                android:textSize="14sp"
-                android:layout_marginTop="8dp" />
+                android:layout_margin="16dp"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="8dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/white"
+                android:backgroundTint="@color/white">
 
-            <!-- Reacciones -->
-            <LinearLayout
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Título de la publicación 1"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_marginTop="8dp"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/cuadrado"
+                        android:src="@drawable/img_7"
+                        android:contentDescription="Imagen de la publicación" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Esta es una breve descripción de la publicación número uno. Puede ser un resumen o introducción."
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14sp" />
+
+                    <!-- Reacciones -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="16dp"
+                            android:text="♡ 12"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="16dp"
+                            android:text="💬 3"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🔁"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/txtcomen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="8dp"
+                        android:text="Comentarios"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"
+                        app:backgroundTint="@color/Verde"
+                        app:cornerRadius="8dp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Publicación 2 -->
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="start"
-                android:layout_marginTop="8dp">
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="10dp"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="8dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/white"
+                android:backgroundTint="@color/white">
 
-                <TextView
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="♡ 12"
-                    android:textSize="14sp"
-                    android:layout_marginEnd="16dp" />
+                    android:orientation="vertical"
+                    android:padding="12dp">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="💬 3"
-                    android:textSize="14sp"
-                    android:layout_marginEnd="16dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Título de la publicación 2"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="🔁"
-                    android:textSize="14sp" />
-            </LinearLayout>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:layout_marginTop="8dp"
+                        android:scaleType="centerCrop"
+                        android:background="@drawable/cuadrado"
+                        android:src="@drawable/img_7"
+                        android:contentDescription="Imagen de la publicación" />
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/txtcomen"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Comentarios"
-                android:textColor="@android:color/white"
-                android:textSize="12sp"
-                app:cornerRadius="8dp"
-                app:backgroundTint="@color/Verde"
-                android:layout_gravity="end"
-                android:layout_marginTop="8dp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Descripción breve de la segunda publicación. Puede incluir contenido de interés para el lector."
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="14sp" />
+
+                    <!-- Reacciones -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="16dp"
+                            android:text="♡ 8"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="16dp"
+                            android:text="💬 1"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🔁"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/txtcomen1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="8dp"
+                        android:text="Comentarios"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"
+                        app:backgroundTint="@color/Verde"
+                        app:cornerRadius="8dp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
         </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
-
-
-
-    <!-- Puedes duplicar el bloque de publicación para añadir más -->
     </ScrollView>
 </LinearLayout>

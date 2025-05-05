@@ -29,7 +29,7 @@ public class Lector_Reporrrtes extends AppCompatActivity {
         binding.imgButtonCrear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ActivityLectorReporrrtesBinding.this, interfaz.class));
+                startActivity(new Intent(Lector_Reporrrtes.this, Crearreportes.class));
             }
         });
 
