@@ -29,12 +29,7 @@ public class Actividades_Ludicasmovil extends AppCompatActivity {
         View view = binding.getRoot();
         setContentView(view);
 
-        binding.btnEnviarEvidencia.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent());
-            }
-        });
+
 
     }
 
