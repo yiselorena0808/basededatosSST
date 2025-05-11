@@ -9,6 +9,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.example.sst.Controller.MainActivity;
 import com.example.sst.databinding.ActivityReportesUsuariossBinding;
 
 public class Reportes_Usuarioss extends AppCompatActivity {
@@ -35,9 +37,10 @@ public class Reportes_Usuarioss extends AppCompatActivity {
         binding.imgButtonCrear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Reportes_Usuarioss.this, ReportesRecibidos.class));
+                startActivity(new Intent(Reportes_Usuarioss.this, Lector_Reporrrtes.class));
             }
         });
+
 
     }
 }

@@ -26,7 +26,7 @@ public class Blog1 extends AppCompatActivity {
         View view = binding.getRoot();
         setContentView(view);
 
-        binding.btnCrear.setOnClickListener(new View.OnClickListener() {
+        binding.btnCrear1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Blog1.this, Blog2.class));
