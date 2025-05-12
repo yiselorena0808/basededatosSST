@@ -37,5 +37,12 @@
     <string name="ver_documento_3">Ver documento 3</string>
     <string name="agregar_nuevo_enlace2">Agregar nuevo enlace:</string>
     <string name="agregar_link2">Agregar link</string>
+
+    <string-array name="estados_array">
+        <item>Activo</item>
+        <item>Inactivo</item>
+        <item>En revisión</item>
+    </string-array>
+
 </resources>
 
