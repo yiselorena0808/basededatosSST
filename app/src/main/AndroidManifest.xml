@@ -31,6 +31,9 @@
             android:name=".Crearreportes"
             android:exported="false" />
         <activity
+            android:name=".AsesoramiemtoM"
+            android:exported="false" />
+        <activity
             android:name=".InicioSesion"
             android:exported="false" />
         <activity
