@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.*;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -53,13 +54,13 @@ public class AsesoramientoM extends AppCompatActivity {
 
             }
         });
-        iv_Logo = findViewById(R.id.iv_logo); // Asumiendo que el ID es img_logo
+        iv_Logo = findViewById(R.id.iv_logo);
 
-        // Configura el listener para la imagen
+
         iv_Logo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Al hacer clic en la imagen, se abre OtraActividad
+
                 Intent intent = new Intent(AsesoramientoM.this, MainActivity.class);
                 startActivity(intent);
             }
@@ -80,7 +81,7 @@ public class AsesoramientoM extends AppCompatActivity {
 
         if (requestCode == PICK_IMAGE_REQUEST && resultCode == Activity.RESULT_OK && data != null && data.getData() != null) {
             Uri imageUri = data.getData();
-            ivPreview.setImageURI(imageUri); // Vista previa
+            ivPreview.setImageURI(imageUri);
             Toast.makeText(this, "Imagen seleccionada correctamente", Toast.LENGTH_SHORT).show();
         }
     }
