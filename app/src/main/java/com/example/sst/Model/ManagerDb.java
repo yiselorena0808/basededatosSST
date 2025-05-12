@@ -6,13 +6,13 @@ import android.database.sqlite.SQLiteDatabase;
 
 import com.example.sst.Controller.DBHelper;
 
-public class ManangerDb {
+public class ManagerDb {
 
     DBHelper dbHelper;
 
     SQLiteDatabase db;
 
-    public ManangerDb (Context context) {
+    public ManagerDb(Context context) {
         dbHelper = new DBHelper(context);
     }
 
