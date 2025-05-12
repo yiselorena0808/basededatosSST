@@ -9,10 +9,12 @@ import android.widget.*;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.sst.Controller.MainActivity;
+
 public class AsesoramientoM extends AppCompatActivity {
 
     private static final int PICK_IMAGE_REQUEST = 1;
-
+    private ImageView iv_Logo;
     private Button btnSeleccionarImagen, btnSubirAses;
     private EditText edtTitulo, edtDescripcion, etBuscar;
     private TextView tvTitulo;
@@ -49,6 +51,17 @@ public class AsesoramientoM extends AppCompatActivity {
             } else {
                 Toast.makeText(this, "Asesoramiento subido con éxito", Toast.LENGTH_SHORT).show();
 
+            }
+        });
+        iv_Logo = findViewById(R.id.iv_logo); // Asumiendo que el ID es img_logo
+
+        // Configura el listener para la imagen
+        iv_Logo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Al hacer clic en la imagen, se abre OtraActividad
+                Intent intent = new Intent(AsesoramientoM.this, MainActivity.class);
+                startActivity(intent);
             }
         });
     }

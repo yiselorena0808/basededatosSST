@@ -8,37 +8,23 @@ import com.example.sst.Controller.DBHelper;
 
 public class ManagerDb {
 
-    DBHelper dbHelper;
-
-    SQLiteDatabase db;
+    private DBHelper dbHelper;
 
     public ManagerDb(Context context) {
         dbHelper = new DBHelper(context);
     }
 
-    public void openDbwrite() {
-        db = dbHelper.getWritableDatabase();
+    // Método para agregar un nuevo usuario
+    public void addUser(String email, String password) {
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(Constantes.COLUMN_EMAIL, email);
+        values.put(Constantes.COLUMN_PASSWORD, password);
+
+        // Insertar los valores en la base de datos
+        db.insert(Constantes.TABLE_USERS, null, values);
+        db.close();
     }
 
-    public void openDbRd() {
-        db = dbHelper.getReadableDatabase();
-    }
-
-    public long insertData() {
-        openDbwrite();
-
-        ContentValues valores = new ContentValues();
-
-         valores.put("nombre", "Laura Pérez");
-         valores.put("cedula", "1023456789");
-         valores.put("cargo", "Analista de Datos");
-         valores.put("lugar", "Bogotá");
-         valores.put("descripcion", "Encargada de la recolección y análisis de datos del área de marketing.");
-         valores.put("estado", "Activo");
-
-         long resul = db.insert ("Datos", null, valores);
-         return resul;
-
-    }
-
+    // Aquí podrías agregar otros métodos como leer, actualizar o eliminar usuarios.
 }

@@ -4,15 +4,14 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-public class
-DBHelper extends SQLiteOpenHelper {
+public class DBHelper extends SQLiteOpenHelper {
     public DBHelper(Context context) {
-        super(context,Constantes.DB_NAME, null,Constantes.DB_VERSION);
+        super(context,Constantes.DATABASE_NAME, null,Constantes.DATABASE_VERSION);
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL(Constantes.GESTION_EPP);
+        db.execSQL(Constantes.TABLE_CREATE);
     }
 
 
